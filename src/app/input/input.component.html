@@ -1,0 +1,15 @@
+<div class="body">
+    
+    <!-- <qr-code [value]="https://www.youtube.com/watch?v=jYGqUjYml_8" size="300" errorCorrectionLevel="M"></qr-code> -->
+        
+    <form #userdata="ngForm" (ngSubmit)="getValues(userdata.value)" align="center">
+      <h3>Add Link to Generate QR-Code</h3>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Add Link</mat-label>
+        <input matInput placeholder="Add Link" required name="link" ngModel>
+      </mat-form-field>
+      <br>
+      <button mat-raised-button color="accent" type="submit" class="submit">Generate</button>
+    </form>
+
+</div>
